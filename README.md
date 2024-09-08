@@ -22,9 +22,9 @@ For example in Chapter 3 you have exercises from 1 to 10, then from 1 to 12, an 
 So for the first 10 exercises I created a folder1, for the second a folder2 an so on...
 
 The repo would be like this:
-Book
-├── folder1
-│   ├── exercises
+Book\
+├── folder1\
+│   ├── exercises\
 |   |   ├── exercises1
 |   |   |   ├── exercise1.py
 |   |   |   ├── exercise2.py
