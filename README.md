@@ -18,15 +18,14 @@ Here’s an example of how the folder structure looks:
 ```plaintext
 Book/
 ├── Chapter1/
-│   ├── exercises/
-│   │   ├── folder1/
-│   │   │   ├── exercise1.py
-│   │   │   ├── exercise2.py
-│   │   │   └── exercise...
-│   │   └── folder2/
-│   │       ├── exercise1.py
-│   │       ├── exercise2.py
-│   │       └── exercise...
+│   ├── folder1/
+│   │   ├── exercise1.py
+│   │   ├── exercise2.py
+│   │   └── exercise...
+│   ├── folder2/
+│   │   ├── exercise1.py
+│   │   ├── exercise2.py
+│   │   └── exercise...
 │   └── summary.txt
 ├── Chapter2/
 .
