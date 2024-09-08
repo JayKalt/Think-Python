@@ -1,41 +1,43 @@
-# Think-Python-How-to-Think-Like-a-Computer-Scientist
- My personal walkthrough the book Think Python by Peter Wentworth, Jeffrey Elkner, Allen B. Downey and Chris Meyers
+# Think Python: How to Think Like a Computer Scientist
 
- There you'll find my solution to most of (maybe all) the exercises proposed by the book, some notes and summaries of the
- book chapters.
+Welcome to my personal walkthrough of the book **Think Python** by Peter Wentworth, Jeffrey Elkner, Allen B. Downey, and Chris Meyers. In this repository, you will find my solutions to most (if not all) of the exercises proposed in the book, along with notes and summaries of each chapter.
 
- If you have any suggestion please let me know anywhere you want.
- Hope you enjoy and find it helpful!
+## Repository Structure
+
+The repository is organized by chapters, mirroring the structure of the book. Each chapter contains both theoretical content and exercises to complete. 
+
+### Folder Organization
+
+- Each chapter is represented by a folder.
+- Exercises are grouped into subfolders. If the exercise numbering resets (e.g., from 1 to 10, then 1 to 12), a new folder is created for each set of exercises.
+
+#### Example Structure
+
+Here’s an example of how the folder structure looks:
+
+Book/
+├── folder1/
+│   ├── exercises/
+│   │   ├── exercises1/
+│   │   │   ├── exercise1.py
+│   │   │   ├── exercise2.py
+│   │   │   └── exercise...
+│   │   └── exercises2/
+│   │       ├── exercise1.py
+│   │       ├── exercise2.py
+│   │       └── exercise...
+│   └── summary.txt
+│
+...
 
 
-FILE ORGANIZATION
------------------------------------
-The book is divided into chapters so is my repository.
+### Contents
 
-Each chapter int the book has a teory part and exercises to do.
-Each chapter in my repo as well.
+- **exercises**: Contains Python files for each exercise.
+- **summary.txt**: A summary of the chapter's key concepts and notes.
 
-Sometimes the exercise's number goes back to 1 for some reason (maybe the topic of the exercise change).
-So I decided to create a new folder each time this happens.
+## Suggestions and Contributions
 
-For example in Chapter 3 you have exercises from 1 to 10, then from 1 to 12, an then from 1 to 14 or something like that.
-So for the first 10 exercises I created a folder1, for the second a folder2 an so on...
+If you have any suggestions or feedback, please feel free to reach out. I hope you find this repository helpful in your journey to learn Python!
 
-The repo would be like this:\
-\
-Book\
-├── folder1\
-│   ├── exercises\
-|   |   ├── exercises1\
-|   |   |   ├── exercise1.py\
-|   |   |   ├── exercise2.py\
-│   |   |   └── exercise...\
-|   |   └── exercises2\
-|   |       ├── exercise1.py\
-|   |       ├── exercise2.py\
-│   |       └── exercise...\
-|   └── summary.txt\
-|\
-.\
-.\
-.\
+Happy coding!
