@@ -15,6 +15,7 @@ The repository is organized by chapters, mirroring the structure of the book. Ea
 
 Here’s an example of how the folder structure looks:
 
+```plaintext
 Book/
 ├── folder1/
 │   ├── exercises/
