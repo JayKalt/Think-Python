@@ -29,8 +29,7 @@ Book/
 │   │       └── exercise...
 │   └── summary.txt
 │
-...
-
+```
 
 ### Contents
 
