@@ -28,7 +28,10 @@ Book/
 │   │       ├── exercise2.py
 │   │       └── exercise...
 │   └── summary.txt
-│
+├── folder2/
+.
+.
+.
 ```
 
 ### Contents
