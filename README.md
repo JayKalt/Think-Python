@@ -21,20 +21,21 @@ So I decided to create a new folder each time this happens.
 For example in Chapter 3 you have exercises from 1 to 10, then from 1 to 12, an then from 1 to 14 or something like that.
 So for the first 10 exercises I created a folder1, for the second a folder2 an so on...
 
-The repo would be like this:
+The repo would be like this:\
+\
 Book\
 ├── folder1\
 │   ├── exercises\
-|   |   ├── exercises1
-|   |   |   ├── exercise1.py
-|   |   |   ├── exercise2.py
-│   |   |   └── exercise...
-|   |   └── exercises2
-|   |       ├── exercise1.py
-|   |       ├── exercise2.py
-│   |       └── exercise...
-|   └── summary.txt
-|
-.
-.
-.
+|   |   ├── exercises1\
+|   |   |   ├── exercise1.py\
+|   |   |   ├── exercise2.py\
+│   |   |   └── exercise...\
+|   |   └── exercises2\
+|   |       ├── exercise1.py\
+|   |       ├── exercise2.py\
+│   |       └── exercise...\
+|   └── summary.txt\
+|\
+.\
+.\
+.\
