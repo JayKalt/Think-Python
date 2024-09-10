@@ -1,0 +1,83 @@
+Functions are used to organize program into chunks that match
+how we think about the problem.
+
+In order to use them we have to call them.
+
+Syntax:
+
+	def <NAME>( <PARAMETERS>):
+		<STATEMENTS>
+
+
+Example:
+
+	def draw_square(animal, size):
+		"""
+		Make animal draw a square with sides of length size.	<--- dockstring
+		"""
+			for _ in range(4):
+				animal.forward(size)
+				animal.left(90)
+
+
+
+Dockstrings are the key way to document our functions in Python.
+We are not supposed how they exaclty work. We want to know the arguments
+and what, what is does and the expected result.
+
+Dockstrings are usually formed using triple-quoted strings
+
+
+Functions can call other functions. They are called nested function (?)
+
+
+Some function in this chapter:
+
+	abs()
+	pow()
+	max()
+	range()
+
+There are 2 types of functions:
+
+	1. Fruitful functions: return a value
+	2. Void functions: do not return anything, usually known as procedure
+
+
+Variables created in the function scope are local variables.
+That means when the function ends, the variable won't be accessible no more
+We can call it also lifetime of a variable
+
+
+
+By rearranging a code previously written we say refactoring the code.
+
+Code that appears after a return statement, or any other place the flow of
+execution can never reach, is called dead code or unreachable code.
+So, always make sure every possible path through the program hits a return
+statement.
+
+
+
+INCREMENTAL DEVELOPMENT:
+The goal is to avoid long debugging sessions by adding and testing only a small
+amount of code at time.
+
+To debug, an easy an practical way is by using print to see stored value into
+variables. Remember to always learn a real debugger if it's needed.
+
+
+WARNING ABOUT FUNCTIONS:
+An important think about function is: do not program CHATTERBOX functions
+A chatterbox function is a functions that asks for an input or prints output.
+
+
+COMPOSITION:
+As we said, we can call a function from within another. This is called composition
+
+
+
+
+TO FOLLOW A GOOD STANDARD:
+Python Enhancement Proposal 8 (PEP 8), http://www.python.org/dev/peps/pep-0008/
+

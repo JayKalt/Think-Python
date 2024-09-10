@@ -1,0 +1,447 @@
+3.1 HELLO, LITTLE TURTLES! ------------------------------------------------
+
+3.1.1 OUR FIRST TURTLE PROGRAM --------------------------------------------
+
+	If we want to use a Python module we have to import it by using the key
+	word "import" like this:
+
+		import turtle
+
+	When we delcare a turtle we are creating an object in our program.
+	We can invoke a method which is a series of instructions that affect a
+	specific object. For example:
+
+		window = tutrle.Screen()
+
+	Is a method that creates an object called window.
+
+	Objects also have attributes (or propeties) that define the state of
+	that object. For example:
+
+		tess.color("blue")
+
+3.1.2 INSTANCE - A HEARD OF TURTLES ---------------------------------------
+
+	Different objects are called instances. Each object is an instance.
+
+3.1.3 THE FOR LOOP --------------------------------------------------------
+	
+	Syntax:
+
+		for loop_variable in list/similar :	<---- terminating condition
+			instruction1
+			instruction2					<---- loop body
+			...
+
+	Exmaple:
+
+		for firend in ["Joe", "Zoe", "Zuki", "Thandi", "Paris"]:
+			invite = "Hi " + firend + ". Please come to my party!"
+			print(invite)
+
+3.1.5 THE LOOP SIMPLYFIES OUR TURTLE PROGRAM ------------------------------
+
+	An important thing to remember from the loop introduction is that we
+	want to look for a repeating pattern.
+
+	That allows us to save lines of code and mostly we create a chunk which
+	is a vital skill in computational thinking. 
+
+	So we want the program to be arranged around those chunks also beacuse
+	mentally that is a simple yet effective way to structure the program's
+	flow.
+
+	Often we use the built-in function "range" to execute the loop body.
+
+	Also if we don't plan to use the index i we can just use "_". It's good
+	style B)
+
+	A random example:
+
+		colors = ["yellow", "red", "purple", "blue"]
+		
+		for color in colors:
+			alex.color(color)
+			alex.forward(50)
+			alex.left(90)
+
+3.1.6 A FEW MORE TURTLE METHODS AND TRIKS ---------------------------------
+
+	I'm gonna list all the methods we saw till now:
+
+		Object		Syntax								Effect
+		-------------------------------------------------------------------
+		Screen		var_name = turtle.Screen()			Create the object
+		Screen		var_name.bgcolor("color_name")		Set bground color
+		Screen		var_name.title("title")				Set screen title
+		Screen		var_name.mainloop()					Wait for input
+
+		Turtle		var_name = turtle.Turtle()			Create the object
+		Turtle		var_name.color("color_name")		Set turtle color
+		Turtle		var_name.pensize(1-?)				Set pen size
+		Turtle		var_name.shape("shape")				Set turtle shape
+		Turtle		var_name.speed(0-10)				Set animation speed
+		Turtle		var_name.penup()					Leave no marks
+		Turtle		var_name.pendown()					Leave marks
+		Turtle		var_name.stamp()					Print the shape
+		Turtle		var_name.hideturtle()				Hide turtle shape
+		Turtle		var_name.showturtle()				Show turtle shape
+		Turtle		var_name.forward(length)			Move forward
+		Turtle		var_name.backward(length)			Move backward
+		Turtle		var_name.left(angle)				Rotate left
+		Turtle		var_name.right(angle)				Rotate right
+
+
+
+
+3.2 CONDITIONALS ----------------------------------------------------------
+
+3.2.1 BOLEAN VALUES AND EXPRESSIONS ---------------------------------------
+
+	Bolean values are either true or false.
+
+		>>> type(True)
+		<class 'bool'>
+
+	For example:
+
+		>>> 5 == (3 + 2)
+		True
+		>>> 5 == 6
+		False
+
+3.2.2 LOGICAL OPERATORS ---------------------------------------------------
+
+	Look at Chapter 2, paragraph 2.6 OPERANDS AND OPERATORS
+	
+	Short-circuit style: python evaluates from left to right so make sure
+	to use the conditions in the right order to avoid unecessary calualtion
+
+3.2.3 TRUTH TABLES --------------------------------------------------------
+
+	_______________		______________		__________
+	A	B	A and B		A	B	A or B		A	not A
+	_______________		______________		__________
+	1	1	   1		1	1	   1		1	  1
+	1	0	   0		1	0	   1		0	  0
+	0	1	   0		0	1	   1		__________
+	0	0	   0		0	0	   0
+	_______________		______________
+
+3.2.4 SIMPLYFING BOOLEAN EXPRESSIONS --------------------------------------
+
+	Look at Chapter 2, paragraph 2.6 OPERANDS AND OPERATORS
+
+3.2.5 CONDITIONAL EXECUTION -----------------------------------------------
+
+	Syntax:
+
+		if <BOOLEAN EXPRESSION>:
+			<STATEMENTS_1>
+		else:
+			<STATEMENTS_2>
+
+	The "pass" statement does nothing
+
+3.2.6 OMITTING THE ELSE CLAUSE --------------------------------------------
+
+	Syntax:
+
+		if <BOOLEAN EXPRESSION>:
+			<STATEMENTS_1>
+
+3.2.7 CHAINED CONDITIONALS ------------------------------------------------
+
+	Syntax:
+
+		if <BOOLEAN EXPRESSION>:
+			<STATEMENTS_1>
+		elif <BOOLEAN EXPRESSION>:
+			<STATEMENTS_2>:
+		else:
+			<STATEMENTS_3>
+
+3.2.8 NESTED CONDITIONAL --------------------------------------------------
+
+	Syntax:
+
+		if <BOOLEAN EXPRESSION>:
+			<STATEMENTS_1>
+		else:
+			if <BOOLEAN EXPRESSION>:
+				<STATEMENTS_2>:
+			else:
+				<STATEMENTS_3>
+
+3.2.9 LOGICAL OPPOSITES ---------------------------------------------------
+
+	Understanding it can help us to get rid of the "not" operator, which,
+	sometiems, can be difficult to read.
+
+	This also brings to an important consideration: Once our program works,
+	we should play around a bit trying to polish it up. Write good comment,
+	think about whether the code would be clearer with different variable
+	names.
+	Could we have done it more elegantly? Should we rather use a function?
+	Can we simplify the conditionals? We think of our code as our creation,
+	our work of art! We make it great.
+
+
+
+
+3.3 ITERATION -------------------------------------------------------------
+
+3.3.1 ASSIGNMENT ----------------------------------------------------------
+
+	Empty
+
+3.3.2 UPDATING VARIABLES --------------------------------------------------
+
+	Increment (long version):	var = var + 1
+	Decrement (long version):	var = var - 1
+
+	Increment (short version):	var += 1
+	Decrement (short version):	var -= 1
+
+3.3.3 THE FOR LOOP REVISITED ----------------------------------------------
+
+	Running through all the items in a list is called traversing/traversal
+
+3.3.4 THE WHILE STATEMENT -------------------------------------------------
+
+	Syntax:
+
+		while <CONDITION>:
+			<STATEMENT>
+
+
+	We want to use while loop when we don't know how many times we want to
+	reiterate the loop body (could also be zero). Until a condition is met.
+	This is known as indefinite iteration.
+
+	We use for loop when we know how many times we want to loop. If we want
+	to traverse a list, we use for. If we want to sum up to a number we use
+	while loop.
+	This is known as definite interation.
+
+3.3.5 THE COLLATZ 3n + 1 SEQUENCE -----------------------------------------
+
+	If we want to add something at the end of print function we do it like
+	this:
+
+		print(whatever_you_want_to_print, end = add_something_to_it)
+
+	Example:
+
+		print(sentence, end=".\n")
+
+	The collatz 3n + 1 sequence is a great example of an indefinite itera-
+	tion.
+
+3.3.6 TRACING A PROGRAM ---------------------------------------------------
+
+	To write effective programs, build good conceptual model and so on, we
+	have to develop the ability to trace the execution of a program.
+
+	It's like recording the state of all variable and the position in the
+	exectuion flow.
+
+3.3.7 COUNTING DIGITS -----------------------------------------------------
+
+	Counter variable is use as convetion to count the number digits
+
+3.3.8 HELP AND META-NOTATION ----------------------------------------------
+
+	--> https://docs.python.org/3/library/stdtypes.html#typesseq-range <--
+
+3.3.9 TABLES --------------------------------------------------------------
+
+	Loops are good for generating tables.
+
+	An exmaple:
+
+		for x in range(13):
+			print(x, "\t", 2 ** x)
+
+	This prints the powers of 2 from 0 to 12.
+
+3.3.10 TWO-DIMENSIONAL TABLES ---------------------------------------------
+
+	Empty
+
+3.3.11 THE BREAK STATEMENT ------------------------------------------------
+
+	Break laves the loop body.
+	For and while loops are pre-test meaning the condition check happens
+	brefore the body.
+
+3.3.12 OTHER FLAVOURS OF LOOPS --------------------------------------------
+
+	The middle-test loop exits the loop in the middle of the body.
+	The post-test loop exits the loop after the body has been executed.
+
+	Usually we use the while loop and set as evaluating condition True so
+	it will enter an infinite loop that only the break instruction in the
+	middle or at the end of the loop body can terminate.
+
+	Watch out, cause the program is more likely to get stuck into an infi-
+	nite loop if the break condition is not well coded.
+
+	Hint: we can decide where to set the exit condition. Just think about
+		  what we want the program to execute and what to skip.
+
+3.3.13 AN EXAMPLE ---------------------------------------------------------
+
+	import random # We cover random numbers in the
+
+	2 rng = random.Random() # modules chapter, so peek ahead if you want.
+							# "rng" stands for "random number generator".
+
+	number = rng.randrange(1, 1000) # Get random number between [1 and 1000).
+	
+	guesses = 0
+	message = ""
+	
+	while True:
+		guess = int(input(message + "\nGuess the number from 1 to 1000: "))
+		guesses += 1
+		if guess > number:
+			message += str(guess) + " is too high.\n"
+		elif guess < number:
+			message += str(guess) + " is too low.\n"
+		else:
+			break
+	
+	input("\n\nGreat, you got it in "+str(guesses)+" guesses!\n\n")
+
+3.3.14 THE CONTINUE STATEMENT ---------------------------------------------
+
+	Continue statement skips the current loop iteration and goes right to
+	the next one.
+
+3.3.15 PAIRED DATA --------------------------------------------------------
+
+	Syntax:
+
+		celebs = [("Brad Pitt", 1963), ("Jack Nicholson", 1937),
+				  ("Justin Bieber", 1994)]
+
+	The length of the list is 3 elements, each one is a paired data.
+
+	To use them in a loop:
+
+		for name, year in celebs:
+			< instructions >
+			...
+
+3.3.16 NESTED LOOPS FOR NESTED DATA ---------------------------------------
+
+	Here's a quick example:
+
+	students = [("John", ["CompSci", "Physics"]),
+				("Vusi", ["Maths", "CompSci", "Stats"]),
+				("Jess", ["CompSci", "Accounting", "Economics",
+						  "Management"]),
+				("Sarah", ["InfSys", "Accounting", "Economics", "CommLaw"]),
+				("Zuki", ["Sociology", "Economics", "Law", "Stats", "Music"])]
+
+
+	If we want to know how many courses each student takes:
+
+		for name, subjects in students:
+			print(name, "takes", len(subjects), "courses")
+
+
+	But if we want to know how many students take CompSci:
+
+		counter = 0
+		for name, subjects in students:
+			for s in subjects: # A nested loop!
+				if s == "CompSci":
+					counter += 1
+		
+		print("The number of students taking CompSci is", counter
+
+	or in a more concise way:
+
+		counter = 0
+			for name, subjects in students:
+				if "CompSci" in subjects:
+					counter += 1
+
+3.3.17 NETWON'S METHOD FOR FINDING SQUARE ROOTS ---------------------------
+
+	Empty
+
+3.3.18 ALGORITHMS ---------------------------------------------------------
+
+	Interesting to read if you want to:
+
+	Newton’s method is an example of an algorithm: it is a mechanical
+	process for solving a category of problems (in this case, computing
+	square roots).
+	
+	Some kinds of knowledge are not algorithmic. For example, learning
+	dates from history or your multiplication tables involves memorization
+	of specific solutions. But the techniques you learned for addition with
+	carrying, subtraction with borrowing, and long division are all algori-
+	thms.
+	Or if you are an avid Sudoku puzzle solver, you might have some
+	specific set of steps that you always follow.
+	
+	One of the characteristics of algorithms is that they do not require
+	any intelligence to carry out. They are mechanical processes in which
+	each step follows from the last according to a simple set of rules.
+	And they are designed to solve a general class or category of problems,
+	not just a single problem.
+
+	Understanding that hard problems can be solved by step-by-step
+	algorithmic processes (and having technology to execute these
+	algorithms for us) is one of the major breakthroughs that has had
+	enormous benefits.
+	
+	So while the execution of the algorithm may be boring and may require
+	no intelligence, algorithmic or computational thinking — i.e. using
+	algorithms and automation as the basis for approaching problems — is
+	rapidly transforming our society.
+
+	Some claim that this shift towards algorithmic thinking and processes
+	is going to have even more impact on our society than the invention of
+	the printing press.
+	And the process of designing algorithms is interesting, intellectually
+	challenging, and a central part of what we call programming.
+
+	Some of the things that people do naturally, without difficulty or cons
+	cious thought, are the hardest to express algorithmically. Understan-
+	ding natural language is a good example. We all do it, but so far no
+	one has been able to explain how we do it, at least not in the form of
+	a step-by-step mechanical algorithm.
+
+
+
+
+3.4 SOME TIPS, TRICKS, AND COMMON ERRORS ----------------------------------
+
+3.4.1 PROBLEMS WITH LOGIC AND FLOW OF CONTROL -----------------------------
+
+	Tip: Think about the return conditions of the loop
+	
+	Do I need to look at all elements in all cases?
+	Can I shortcut and take an early exit?
+	Under what conditions?
+	When will I have to examine all the items in the list
+
+	
+	Tip: Generalize your use of Booleans
+
+	At: http://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python_3/Boolean_Expressions
+
+3.4.2 LOOPING AND LISTS ---------------------------------------------------
+
+	Tip: Don’t create unnecessary lists
+
+	Lists are useful if you need to keep data for later computation. But if
+	you don’t need lists, it is probably better not to generate them.
+
+
+	

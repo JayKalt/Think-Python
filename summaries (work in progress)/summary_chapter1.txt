@@ -1,0 +1,114 @@
+1.1 INTRODUCTION ----------------------------------------------------------
+
+	The most importat skill for a programmer is the problem solving. Is the
+	ability to think creatively and to solve problems in origianl way.
+
+	The porgramming language we're gonna deal with is Python, an high-level
+	language. 
+	But what is an high-level language? Well, it's a program with strong ab
+	straction, meaning it's closer to our way of expressing things. It's
+	closer to our language.
+
+	Python uses an Interpreter to run code. What is it an how does it work?
+	The Interpreter is a program that translates code into bytecode which
+	is a lower level language, understood by the PVM (Python Virtual
+	Machine) which is the runtime engine of Python.
+	The PVM translates the bytecode into machine code which is executed by 
+	that specific hardware.
+
+	This allows Python another significant feature. It's portable, meaning 
+	they can run on different kinds of systems without worring too much
+	about hardware specifications with few or no modifications.
+
+	Back to Python Interpreter. There are two ways to use it:
+	- immediate mode
+	- script    mode
+
+1.2 WHAT IS A PROGRAM -----------------------------------------------------
+
+	A sequence of instructions. All you need is basically:
+
+	- basic math
+	- conditional execution
+	- loops
+
+	- an input
+	- an output
+
+1.3 WHAT IS DEBUGGING -----------------------------------------------------
+
+	The process of correcting bugs, errors made by human while coding.
+	There are three kind of error:
+
+	- syntax errors
+	- runtime errores
+	- semantic errors
+
+1.4 SYNTAX ERRORS ---------------------------------------------------------
+
+	You write "for numbe in list" instead of "for numbers in list:"
+
+1.5 RUNTIME ERRORS --------------------------------------------------------
+
+	So rare, we won't see them often
+
+1.6 SEMANTIC ERRORS -------------------------------------------------------
+
+	You basically fuck up somewhere in the logic of the program.
+	Let's say you want to get the sum of two numbers, a and b but instead
+	of writing this:
+
+		print((a + b) / 2)
+
+	you write this:
+
+		print(a + b / 2)
+
+	Everything's right expect for the logic behind it.
+
+1.7 EXPERIMENTAL DEBUGGING ------------------------------------------------
+	
+	Debugging is one of the most intellectually rich and challenging parts
+	of programming.
+
+	Programming and the bugging are the same thing. The idea is to write a
+	program that does something and gradully debug it so that it will works
+
+1.8 FORMAL AND NATURAL LANGUAGE -------------------------------------------
+
+	Natural langauge is the language that people speak.
+	Formal languages are languages design for specific purposes like coding
+
+	Formal languages usually have strict rules about syntax and they come 
+	in two flavors:
+
+	- toekn: the smallest element of the language (for, "Hello world!", 12)
+	- structure: the way the token are arranged (if ...: else: ...)
+
+	Natural language has also similar rules but here's what comes with natu
+	ral language as well:
+
+	- ambiguity
+	- redundancy
+	- literalness
+
+	And that's exaclty what programming languages avoid in order to work
+	properly. 
+
+1.9 THE FIRST PROGRAM -----------------------------------------------------
+	
+	Empty
+
+1.10 COMMENTS -------------------------------------------------------------
+
+	In Python, the # token starts a comment. The rest of the line is ignored
+
+	Here is a new version of Hello, World!
+		
+		#---------------------------------------------------
+		# This demo program shows off how elegant Python is!
+		# Written by Joe Soap, December 2010.
+		# Anyone may freely copy or modify this program.
+		#---------------------------------------------------
+		
+		print("Hello, World!") # Isn't this easy!

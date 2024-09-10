@@ -1,0 +1,187 @@
+2.1 VALUES AND DATA TYPE --------------------------------------------------
+
+	Data types:
+
+		1.	integer:
+						type(4)
+						<class 'int'>
+
+		2.	string:
+						type("Hello world")
+						<class 'str'>
+
+			We can use triple single quotes:
+
+				>>> print('''"Oh no", she exclaimed, "Ben's bike is broken!
+						  "''')
+				"Oh no", she exclaimed, "Ben's bike is broken!"
+				>>>
+
+			And even triple double quotes:
+
+				>>> message = """This message will
+				... span several
+				... lines."""
+				>>> print(message)
+				This message will
+				span several
+				lines.
+				>>>
+
+		3.	float
+						type(3.2)
+						<class 'float'>
+
+2.2 VARIABLES -------------------------------------------------------------
+
+	Python can manipulate variables.
+	To assign a value to a variable we use the assign token '='.
+	Python is not a typed language so variables automatically get the class
+	based on the value they sotre.
+
+		>>> a = 21
+		>>> a = "I like pizza"
+		>>> a
+		'I like pizza'
+		>>> b = "I love pizza"
+		>>> b = 3.1
+		>>> 
+		3.1
+
+	That's all legal
+
+2.3 VARIABLE NAMES AND KEYWORDS -------------------------------------------
+
+	We should give variables meaningful names. We should be able to under
+	stand immediatly what a variable is used for.
+
+	There are illegal names, for example:
+	- names starting with number such as 82_variable
+	- names containing special char such as $ or #
+	- keywordsb such as "and", "else", "return", "break"
+
+2.4 STATEMENTS ------------------------------------------------------------
+
+	It's an instruction that Python interpreter can execute.
+
+2.5 EVALUATING EXPRESSION -------------------------------------------------
+
+	An expression is a combination of values, variables, operators, calls
+	to functions that evaluates to something.
+
+	For example:
+
+		>>> 1 + 1
+		2
+		>>> len("hello")
+		5
+		>>> 1 == 1
+		True
+
+2.6 OPERANDS AND OPERATORS ------------------------------------------------
+
+	Opernad						Symbol				Example
+	-----------------------------------------------------------------------
+	sum				  			+					2 + 2 = 4
+	subtract		  			-					5 - 2 = 3
+	multiply		  			*					5 * 5 = 25
+	division					/					9 / 3 = 3
+	floor division				//					10 / 4 = 2
+	module			  			%					7 % 2 = 1
+	power			  			**					2 ** 3 = 8
+	-----------------------------------------------------------------------
+	and							and					if(a == 1 and b == 1):
+	or							or					if(a == 1 or b == 1):
+	not							not					if not(a == 1):
+	----------------------------------------------------------------------
+	greater equal				>=					a >= b
+	greater						>					a >  b
+	equal						==					a == b
+	less equal					<=					a <= b
+	less						< 					a <  b
+	not	equal					!=					a != b
+
+2.7 TYPE CONVERTER FUNCTIONS ----------------------------------------------
+
+	int(...)					int(...)			int(5.999) 	  -> 5	
+													int(-3.45) 	  -> -3
+													int("3")   	  -> 3
+
+	float(...)					float(...)			float(7)	  -> 7.0
+													float("3.99") -> 3.99
+
+	str(...)					str(...)			str(123)	  -> "123"
+													str(2.9)	  -> "2.9"
+
+2.8 ORDER OF OPERATIONS ---------------------------------------------------
+
+	Rules of precedence: PEM-DAS
+
+	1. Parentheses
+	2. Exponentiation
+	3. MUltiplication or Division
+	4. Opernad with same precedence from left-to-right
+
+	The only exeption to left-to-right is the power which is right-to-left.
+	You can still force left-to-right with parentheses
+
+2.9 OPERATIONS ON STRINGS -------------------------------------------------
+
+	Generally speaking you can't perform mathematical operations on strings
+	Interestingly the + operator works with strings as concatenation.
+
+	For example:
+
+		fruit = "banana"
+		baked_good = " nut bread"
+		print(fruit + baked_good)
+
+	Note: we have to add the space before the word "nut".
+
+	Also the * operator works:
+
+	For example:
+
+		word = "fun" * 3
+
+	Would be 'FunFunFun' which is the same as "Fun" + "Fun" + "Fun"
+
+2.10 INPUT ----------------------------------------------------------------
+
+	Built-in function input which takes as default <class 'str'> values
+
+2.11 COMPOSITION ----------------------------------------------------------
+
+	We can now compose more of one statement to make a slightly advanced
+	program.
+
+	Let's calculate the area of a circle with the following formula:
+
+			Area = piR^2
+
+
+	Firstly, we’ll do the four steps one at a time:
+		
+		response = input("What is the radius? ")
+		r = float(response)
+		area = 3.141 * r**2
+		print("Area is ", area)
+		
+	Now let’s compose the first two lines into a single line of code, and
+	compose the second two lines into another line of code:
+		
+		r = float( input("What is the radius? ") )
+		print("Area is ", 3.141 * r**2)
+		
+	If we really wanted to be tricky, we could write all in one statement:
+		
+		print("Area is ", 3.141*float(input("What is the radius?"))**2)
+
+
+	Note: do not sacrifice readability for an extremly compact writing un-
+		  less it's necessary beacuse that would make the code much harder
+		  to understand.
+
+2.12 THE MODULE OPERATOR --------------------------------------------------
+
+	Look at paragraph 2.6 OPERANDS AND OPERATORS
