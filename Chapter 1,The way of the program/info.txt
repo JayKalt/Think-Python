@@ -1,0 +1,2 @@
+Exercises are too easy it doesn't even involve in using any script
+but just the python3 interpreter so, good luck with that
