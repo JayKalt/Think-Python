@@ -21,6 +21,13 @@ def slope(x1, y1, x2, y2):
 
 	return (y2 - y1) / (x2 - x1)
 
+def intercept(x1, y1, x2, y2):
+	"""
+	  Returns the y-intercept of the line through the points (x1, y1) and (x2, y2)
+	"""
+
+	return y1 - slope(x1, y1, x2, y2) * x1
+
 
 print("Slopes")
 print(slope(5, 3, 4, 2) == 1.0)
