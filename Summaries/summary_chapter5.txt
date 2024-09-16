@@ -9,6 +9,7 @@ USEFUL METHODS:
 . string.split()  >  splits a string of multi words into a single words list removing whitespace
 ------
 . enumaerate(list)  > associates each element to its index
+. list(...) ? does something which is probably associated with some methods
 ------
 
 
@@ -42,3 +43,24 @@ assign the value, else start will be zero.
 
 
 
+
+
+FORMAT METHOD:
+If we want to format a method we can do it using format method which
+apparently is the most powerful way to do it:
+
+  print("His name is {0}".format("Arthur"))
+
+This is done by using PLACEHOLDERS which are those {..} within a number
+that match the position of the word to be replaced with.
+
+There are also format specifications that can be used to personalize the
+string. For example:
+
+  .  {0:.3f} prints 3 decimal numbers after the integer part
+
+  .  "|||{0:<15}|||{1:^15}|||{2:>15}|||Born in {3}|||" this string says
+      to allineate the text to the left by 15 spaces
+      then to do it in the middle by other 15 spaces
+      then on the right by other 15 and finally to print something in the
+      end
