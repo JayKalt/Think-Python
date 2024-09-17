@@ -37,3 +37,8 @@ def is_multiple(n, f):
 	is_fracotr(f, n)
 
 
+print(is_multiple(12, 3))
+print(is_multiple(12, 4))
+print(not is_multiple(12, 5))
+print(is_multiple(12, 6))
+print(not is_multiple(12, 7))
