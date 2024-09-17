@@ -46,7 +46,16 @@ There are 2 types of functions:
 
 Variables created in the function scope are local variables.
 That means when the function ends, the variable won't be accessible no more
-We can call it also lifetime of a variable
+We can call it also lifetime of a variable.
+If we want a variable to still exist when the function is done, we can declare
+it as global within the function.
+
+For example:
+sz = 2
+def h2():
+	global sz
+	sz += 1
+
 
 
 
@@ -76,8 +85,38 @@ COMPOSITION:
 As we said, we can call a function from within another. This is called composition
 
 
-
-
 TO FOLLOW A GOOD STANDARD:
 Python Enhancement Proposal 8 (PEP 8), http://www.python.org/dev/peps/pep-0008/
+
+
+
+TYPES OF FUNCTION: MODIFIERS VS PURE FUNCTIONS
+Modifiers take list as arguments an change them during execution. They're called so
+because they produce side effects.
+A pure function instead, does not produce side effects, it just returns a value.
+
+For example a function double_stuff(list) can be:
+A PURE FUNCTION:
+list = [2, 4, 6]
+new_list = double_stuff(list)
+new_list = [4, 8, 12]
+list = [2, 4, 6]
+
+A MODIFIER:
+list = [2, 4, 6]
+list = double_stuff(list)
+list = [4, 8, 12]
+
+Generally speaking, modifiers are more risky then a pure function, so always think
+about using them and the risks you could face.
+
+
+
+
+STRINGS
+Four fundamental operator to work with strings:
+. len(str) finds the lenght of a string (already saw that)
+. str[i] the subscript operation extracts the i'th char of the string, as a new string
+. str[i:j] the slice operation extracts a subtring out of a string
+. str.find(target) returns the index where target ossurs within the string, or -1 if it's not found
 
