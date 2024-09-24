@@ -35,8 +35,12 @@ Book/
 
 ### Contents
 
-- **exercises**: Contains Python files for each exercise.
-- **summary.txt**: A summary of the chapter's key concepts and notes.
+- **chapter/**: Folder that contains the exercises of that chapter
+- **folder/**: Contains the exercises on specific topics of that chapter
+- **exercise.py**: The Python exercises solved
+
+- **Summaries/**: The folder that contains all the summaries of the book
+- **summary.txt**: A summary of the chapter's key concepts and notes
 
 ## Suggestions and Contributions
 
