@@ -19,25 +19,29 @@ Here’s an example of how the folder structure looks:
 Book/
 ├── Chapter1/
 │   ├── folder1/
-│   │   ├── exercise1.py
-│   │   ├── exercise2.py
-│   │   └── exercise...
+│   │   ├── ex1.py
+│   │   ├── ex2.py
+│   │   └── etc...
 │   ├── folder2/
-│   │   ├── exercise1.py
-│   │   ├── exercise2.py
-│   │   └── exercise...
+│   │   ├── ex1.py
+│   │   ├── ex2.py
+│   │   └── etc...
 │   └── summary.txt
 ├── Chapter2/
 .
 .
 .
+└── Summaries/
+    ├── summary_chapter1.txt
+    ├── summary_chapter2.txt
+    └── etc...
 ```
 
 ### Contents
 
-- **chapter/**: Folder that contains the exercises of that chapter
+- **Chapter/**: Folder that contains the exercises of that chapter
 - **folder/**: Contains the exercises on specific topics of that chapter
-- **exercise.py**: The Python exercises solved
+- **ex.py**: The Python exercises solved
 
 - **Summaries/**: The folder that contains all the summaries of the book
 - **summary.txt**: A summary of the chapter's key concepts and notes
