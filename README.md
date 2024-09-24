@@ -22,11 +22,10 @@ Book/
 │   │   ├── ex1.py
 │   │   ├── ex2.py
 │   │   └── etc...
-│   ├── folder2/
-│   │   ├── ex1.py
-│   │   ├── ex2.py
-│   │   └── etc...
-│   └── summary.txt
+│   └── folder2/
+│       ├── ex1.py
+│       ├── ex2.py
+│       └── etc...
 ├── Chapter2/
 ├── Chapter3/
 .
