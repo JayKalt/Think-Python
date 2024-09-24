@@ -21,6 +21,9 @@ E.G:
 
 word[-1] = t
 You can use it for index of any list.
+To reverse a word you can say:
+word[::-1]
+and its gonna print the reverse list
 
 
 COMPARE STRINGS:
