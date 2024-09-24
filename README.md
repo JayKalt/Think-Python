@@ -28,7 +28,7 @@ Book/
 │   │   └── etc...
 │   └── summary.txt
 ├── Chapter2/
-.
+├── Chapter3/
 .
 .
 └── Summaries/
