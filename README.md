@@ -47,6 +47,6 @@ Book/
 
 ## Suggestions and Contributions
 
-If you have any suggestions or feedback, please feel free to reach out. I hope you find this repository helpful in your journey to learn Python!
+If you have any suggestions or feedback, please feel free to reach out in the Issue section or anywhere you want. I hope you find this repository helpful in your journey to learn Python!
 
 Happy coding!
