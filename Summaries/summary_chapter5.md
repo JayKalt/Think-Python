@@ -23,6 +23,7 @@
 . enumerate(list)  > associates each element to its index<br>
 ```
 <br><br>
+-----
 ## Negative indexing
 We can work with negative index that starts from the end of the word and goes up to the first.
 E.G:
