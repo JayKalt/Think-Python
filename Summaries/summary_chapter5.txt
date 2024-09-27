@@ -1,60 +1,55 @@
-STRINGS:
-
-USEFUL METHODS:
+#STRINGS
+## Useful and nice-to-have methods
 ------
 . string.upper()  >  changes all string char from lower to upper
 . string.lower()  >  same as lower but viceversa
 . string.capitalize()  >  capitalize the first letter
 . string.swapcase()  >  revert the case of each char
-. string.split()  >  splits a string of multi words into a single words list removing whitespace
+-----
+. string.split()  >  splits a string of multi words into a list of single words, removing whitespace
 ------
-. enumaerate(list)  > associates each element to its index
-. list(...) ? does something which is probably associated with some methods
+. string.find(target) > find the target in a string
+. string.rfind(target) > find the target but reverse (starting from the last position)
+-----
+. enumerate(list)  > associates each element to its index
 ------
 
 
-NEGATIVE INDEX:
-We can work with negative index that starts from the end of the word
-and goes up to the first.
-E.G:
+## Negative indexing
+We can work with negative index that starts from the end of the word and goes up to the first.
+E.G:```
   world = "Test"
+  word[-1] = t
+```You can use it for index of any string.
 
-word[-1] = t
-You can use it for index of any list.
 To reverse a word you can say:
-word[::-1]
-and its gonna print the reverse list
+E.G:```
+  word[::-1]
+```It will print the string reversed!
 
 
-COMPARE STRINGS:
-We can compare strings. The only thing to really remember is that
-upper case letteres come first then lowercase letters. That's all.
+## String comparison
+We can compare strings and it works as a normal dictionary.
+The only thing to really remember is that upper case letteres come first then lowercase letters
 
+## Strings are immutables!
+String cannot be chainged unless we create new ones or re-assigne the existing ones
 
-STRINGS ARE IMMUTABLE!!!!!
-
-
-OPTIONAL PARAMETERS:
-Optional parameters are assigned if they find a match between the call
-and the arguments.
-If they don't, it will assign a default vaule specificed in the def.
-E.G:
+## Optional parameters in methods
+Optional parameters are assigned if they find a match between the call and the arguments.
+If they don't, it will be assigned a default vaule.
+E.G:```
   def find(haystack, needle, start=0):
-    ....
-In this case, if the call finds a match to the start parameter it will
+    ...
+```In this case, if the call finds a match to the start parameter it will
 assign the value, else start will be zero.
 
 
-
-
-
-FORMAT METHOD:
-If we want to format a method we can do it using format method which
-apparently is the most powerful way to do it:
-
+## Formatting methods
+If we want to format a method we can do it using the ```format``` method:
+E.G:```
   print("His name is {0}".format("Arthur"))
-
-This is done by using PLACEHOLDERS which are those {..} within a number
+```This is done by using PLACEHOLDERS which are those {..} within a number
 that match the position of the word to be replaced with.
 
 There are also format specifications that can be used to personalize the
