@@ -45,10 +45,10 @@ It will print the string reversed!
 ### 2.2 String comparison
 We can compare strings and it works as a normal dictionary.
 The only thing to really remember is that upper case letteres come first then lowercase letters
-
+---
 ### 2.3 Strings are immutables!
 String cannot be chainged unless we create new ones or re-assigne the existing ones
-
+---
 ### 2.4 Optional parameters in methods
 Optional parameters are assigned if they find a match between the call and the arguments.
 If they don't, it will be assigned a default vaule.
