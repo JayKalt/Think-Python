@@ -17,7 +17,7 @@
 
 ## Negative indexing
 We can work with negative index that starts from the end of the word and goes up to the first.
-E.G:```
+E.G:```plaintext
   world = "Test"
   word[-1] = t
 ```You can use it for index of any string.
