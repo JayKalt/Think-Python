@@ -17,13 +17,11 @@
 . string.find(target) > find the target in a string<br>
 . string.rfind(target) > find the target but reverse (starting from the last position)<br>
 ```
------------------------------------------------------------------------------------------------------<br>
 ### FUNCTIONS
 #### List function
 ```
 . enumerate(list)  > associates each element to its index<br>
 ```
------------------------------------------------------------------------------------------------------<br>
 
 
 ## Negative indexing
