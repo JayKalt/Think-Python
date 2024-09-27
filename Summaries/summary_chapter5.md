@@ -1,5 +1,5 @@
-# STRINGS
-## Useful and nice-to-have methods and functions
+# CHAPTER 5, STRINGS
+## 1. Summary of nice-to-have methods and functions
 ### METHODS
 #### For the char case
 ```
@@ -25,7 +25,8 @@
 -----
 <br><br>
 
-## Negative indexing
+## 2. Chapter's notions
+## 2.1 Negative indexing
 We can work with negative index that starts from the end of the word and goes up to the first.
 E.G:
 ```
@@ -33,7 +34,6 @@ E.G:
   word[-1] = t
 ```
 You can use it for index of any string.
-
 To reverse a word you can say:
 E.G:
 ```
@@ -42,14 +42,14 @@ E.G:
 It will print the string reversed!
 
 
-## String comparison
+## 2.2 String comparison
 We can compare strings and it works as a normal dictionary.
 The only thing to really remember is that upper case letteres come first then lowercase letters
 
-## Strings are immutables!
+## 2.3 Strings are immutables!
 String cannot be chainged unless we create new ones or re-assigne the existing ones
 
-## Optional parameters in methods
+## 2.4 Optional parameters in methods
 Optional parameters are assigned if they find a match between the call and the arguments.
 If they don't, it will be assigned a default vaule.
 E.G:
@@ -61,7 +61,7 @@ In this case, if the call finds a match to the start parameter it will
 assign the value, else start will be zero.
 
 
-## Formatting methods
+## 2.5 Formatting methods
 If we want to format a method we can do it using the ```format``` method:
 E.G:
 ```
