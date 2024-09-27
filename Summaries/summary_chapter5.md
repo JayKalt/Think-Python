@@ -1,11 +1,13 @@
 # STRINGS
 ## Useful and nice-to-have methods
------------------------------------------------------------------------------------------------------<br>
+-----
+<br>
 . string.upper()  >  changes all string char from lower to upper<br>
 . string.lower()  >  same as lower but viceversa<br>
 . string.capitalize()  >  capitalize the first letter<br>
 . string.swapcase()  >  revert the case of each char<br>
------------------------------------------------------------------------------------------------------<br>
+-----
+<br>
 . string.split()  >  splits a string of multi words into a list of single words, removing whitespace<br>
 -----------------------------------------------------------------------------------------------------<br>
 . string.find(target) > find the target in a string<br>
