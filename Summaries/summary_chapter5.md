@@ -1,6 +1,6 @@
 # STRINGS
 ## Useful and nice-to-have methods
-# Char case -----
+#### Char case -----
 ```
 . string.upper()       >  changes all string char from lower to upper<br>
 . string.lower()       >  same as lower but viceversa<br>
