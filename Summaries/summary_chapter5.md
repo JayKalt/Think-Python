@@ -1,4 +1,4 @@
-#STRINGS
+# STRINGS
 ## Useful and nice-to-have methods
 ------
 . string.upper()  >  changes all string char from lower to upper
@@ -17,15 +17,19 @@
 
 ## Negative indexing
 We can work with negative index that starts from the end of the word and goes up to the first.
-E.G:```plaintext
+E.G:
+```
   world = "Test"
   word[-1] = t
-```You can use it for index of any string.
+```
+You can use it for index of any string.
 
 To reverse a word you can say:
-E.G:```
+E.G:
+```
   word[::-1]
-```It will print the string reversed!
+```
+It will print the string reversed!
 
 
 ## String comparison
@@ -38,18 +42,22 @@ String cannot be chainged unless we create new ones or re-assigne the existing o
 ## Optional parameters in methods
 Optional parameters are assigned if they find a match between the call and the arguments.
 If they don't, it will be assigned a default vaule.
-E.G:```
+E.G:
+```
   def find(haystack, needle, start=0):
     ...
-```In this case, if the call finds a match to the start parameter it will
+```
+In this case, if the call finds a match to the start parameter it will
 assign the value, else start will be zero.
 
 
 ## Formatting methods
 If we want to format a method we can do it using the ```format``` method:
-E.G:```
+E.G:
+```
   print("His name is {0}".format("Arthur"))
-```This is done by using PLACEHOLDERS which are those {..} within a number
+```
+This is done by using PLACEHOLDERS which are those {..} within a number
 that match the position of the word to be replaced with.
 
 There are also format specifications that can be used to personalize the
