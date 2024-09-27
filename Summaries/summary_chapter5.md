@@ -25,7 +25,7 @@
 -----
 <br><br>
 
-## 2. Chapter's notions
+## 2. String related notions
 ### 2.1 Negative indexing
 We can work with negative index that starts from the end of the word and goes up to the first.
 E.G:
@@ -72,6 +72,46 @@ E.G:
 This is done by using PLACEHOLDERS ```{..}``` and associate each of them with a number that matches the position of the replacing word
 There are also format specifications that can be used to personalize the string. For example:
 ```
-.{0:.3f}                                 > prints 3 decimal numbers after the integer part
-.{0:<15},{1:^15},{2:>15} and born in {3} > alienates the text on left/middle/right by 15 spaces
+.{0:.3f} ca                > prints 3 decimal numbers after the integer part
+.{0:<15}|{1:^15}|{2:>15} > alienates the text on left/middle/right by 15 spaces
 ```
+
+## 3 Tuples
+Similar to what other langugages call records (or "struct"), which are informations that belongs to something or someone like a student records.
+The tuple chunks together information, without specifying the field name but we can guess.
+Btw a tuple it's made of 2 values.
+
+-----
+### 3.1 Tuples are like strings
+Like strings, tuples are immutables, support all the indexing operators.
+Empty tuples looks like this:
+```
+  my_first_tuple = ()
+```
+A tuple with just one element specified looks like this:
+```
+  one_elem_tuple = (5,)
+```
+Pretty sad hu? We won't use it much.
+
+-----
+### 3.2 Packing, unpaking
+Declaring:<br>
+```personal_data = ("Bob", "Dalyton", 32, 7, 29, 1979)```
+Packing:<br>
+```(name, surname, age, month, day, year)```
+Unpcking:<br>
+```
+>>> name
+'Bob'
+>>> day
+7
+```
+
+-----
+### 3.3 Swap variables
+As simple as that:
+```
+(a, b) = (b, a)
+```
+First, tuple needs to be "packed".
