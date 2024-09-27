@@ -1,18 +1,18 @@
 # STRINGS
 ## Useful and nice-to-have methods
-------
-. string.upper()  >  changes all string char from lower to upper
-. string.lower()  >  same as lower but viceversa
-. string.capitalize()  >  capitalize the first letter
-. string.swapcase()  >  revert the case of each char
------
-. string.split()  >  splits a string of multi words into a list of single words, removing whitespace
-------
-. string.find(target) > find the target in a string
-. string.rfind(target) > find the target but reverse (starting from the last position)
------
-. enumerate(list)  > associates each element to its index
-------
+------<br>
+. string.upper()  >  changes all string char from lower to upper<br>
+. string.lower()  >  same as lower but viceversa<br>
+. string.capitalize()  >  capitalize the first letter<br>
+. string.swapcase()  >  revert the case of each char<br>
+-----<br>
+. string.split()  >  splits a string of multi words into a list of single words, removing whitespace<br>
+------<br>
+. string.find(target) > find the target in a string<br>
+. string.rfind(target) > find the target but reverse (starting from the last position)<br>
+-----<br>
+. enumerate(list)  > associates each element to its index<br>
+------<br>
 
 
 ## Negative indexing
