@@ -1,23 +1,28 @@
 # STRINGS
-## Useful and nice-to-have methods
-#### Char case -----
+## Useful and nice-to-have methods and functions
+### METHODS
+#### For the char case
 ```
 . string.upper()       >  changes all string char from lower to upper<br>
 . string.lower()       >  same as lower but viceversa<br>
 . string.capitalize()  >  capitalize the first letter<br>
 . string.swapcase()    >  revert the case of each char<br>
 ```
------ String to list
+#### Convert string to list
 ```
-. string.split()  >  splits a string of multi words into a list of single words, removing whitespace<br>
+. string.split()        >  splits a string of multi words into a list of single words, removing whitespace<br>
 ```
------ Find char in string
+#### Find char in a string
 ```
 . string.find(target) > find the target in a string<br>
 . string.rfind(target) > find the target but reverse (starting from the last position)<br>
 ```
 -----------------------------------------------------------------------------------------------------<br>
+### FUNCTIONS
+#### List function
+```
 . enumerate(list)  > associates each element to its index<br>
+```
 -----------------------------------------------------------------------------------------------------<br>
 
 
@@ -63,16 +68,9 @@ E.G:
 ```
   print("His name is {0}".format("Arthur"))
 ```
-This is done by using PLACEHOLDERS which are those {..} within a number
-that match the position of the word to be replaced with.
-
-There are also format specifications that can be used to personalize the
-string. For example:
-
-  .  {0:.3f} prints 3 decimal numbers after the integer part
-
-  .  "|||{0:<15}|||{1:^15}|||{2:>15}|||Born in {3}|||" this string says
-      to allineate the text to the left by 15 spaces
-      then to do it in the middle by other 15 spaces
-      then on the right by other 15 and finally to print something in the
-      end
+This is done by using PLACEHOLDERS ```{..}``` and associate each of them with a number that matches the position of the replacing word
+There are also format specifications that can be used to personalize the string. For example:
+```
+.{0:.3f}                                 > prints 3 decimal numbers after the integer part
+.{0:<15},{1:^15},{2:>15} and born in {3} > alienates the text on left/middle/right by 15 spaces
+```
