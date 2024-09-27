@@ -62,7 +62,7 @@ E.G:
 In this case, if the call finds a match to the start parameter it will
 assign the value, else start will be zero.
 
-
+-----
 ### 2.5 Formatting methods
 If we want to format a method we can do it using the ```format``` method:
 E.G:
