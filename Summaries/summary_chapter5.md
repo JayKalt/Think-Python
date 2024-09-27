@@ -62,6 +62,7 @@ E.G:
 In this case, if the call finds a match to the start parameter it will
 assign the value, else start will be zero.
 
+
 -----
 ### 2.5 Formatting methods
 If we want to format a method we can do it using the ```format``` method:
@@ -75,7 +76,8 @@ There are also format specifications that can be used to personalize the string.
 .{0:.3f} ca                > prints 3 decimal numbers after the integer part
 .{0:<15}|{1:^15}|{2:>15} > alienates the text on left/middle/right by 15 spaces
 ```
-
+-----
+<br><br>
 ## 3 Tuples
 Similar to what other langugages call records (or "struct"), which are informations that belongs to something or someone like a student records.
 The tuple chunks together information, without specifying the field name but we can guess.
