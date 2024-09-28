@@ -98,11 +98,15 @@ Pretty sad hu? We won't use it much.
 
 -----
 ### 3.2 Packing, unpaking
-Declaring:<br>
-```personal_data = ("Bob", "Dalyton", 32, 7, 29, 1979)```
-Packing:<br>
-```(name, surname, age, month, day, year)```
-Unpcking:<br>
+Declaring:
+```
+personal_data = ("Bob", "Dalyton", 32, 7, 29, 1979)
+```
+Packing:
+```
+(name, surname, age, month, day, year)
+```
+Unpacking:
 ```
 >>> name
 'Bob'
