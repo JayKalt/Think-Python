@@ -41,16 +41,13 @@ E.G:
 ```
 It will print the string reversed!
 
------
 ### 2.2 String comparison
 We can compare strings and it works as a normal dictionary.
 The only thing to really remember is that upper case letteres come first then lowercase letters
 
------
 ### 2.3 Strings are immutables!
 String cannot be chainged unless we create new ones or re-assigne the existing ones
 
------
 ### 2.4 Optional parameters in methods
 Optional parameters are assigned if they find a match between the call and the arguments.
 If they don't, it will be assigned a default vaule.
@@ -62,8 +59,6 @@ E.G:
 In this case, if the call finds a match to the start parameter it will
 assign the value, else start will be zero.
 
-
------
 ### 2.5 Formatting methods
 If we want to format a method we can do it using the ```format``` method:
 E.G:
@@ -78,6 +73,7 @@ There are also format specifications that can be used to personalize the string.
 ```
 -----
 <br><br>
+
 ## 3 Tuples
 Similar to what other langugages call records (or "struct"), which are informations that belongs to something or someone like a student records.
 The tuple chunks together information, without specifying the field name but we can guess.
@@ -96,7 +92,6 @@ A tuple with just one element specified looks like this:
 ```
 Pretty sad hu? We won't use it much.
 
------
 ### 3.2 Packing, unpaking
 Declaring:
 ```
@@ -104,7 +99,7 @@ personal_data = ("Bob", "Dalyton", 32, 7, 29, 1979)
 ```
 Packing:
 ```
-(name, surname, age, month, day, year)
+(name, surname, age, month, day, year) = personal_data
 ```
 Unpacking:
 ```
@@ -114,7 +109,6 @@ Unpacking:
 7
 ```
 
------
 ### 3.3 Swap variables
 As simple as that:
 ```
