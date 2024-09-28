@@ -116,4 +116,4 @@ As simple as that:
 ```
 (a, b) = (b, a)
 ```
-First, tuple needs to be "packed".
+Note that first, tuple needs to be "packed".
