@@ -1,26 +1,49 @@
-# CHAPTER 5, STRINGS
+# CHAPTER 5, DATA TYPES
 ## 1. Summary of nice-to-have methods and functions
 ### METHODS
-#### For the char case
+#### For letter case
 ```
-. string.upper()       >  changes all string char from lower to upper<br>
-. string.lower()       >  same as lower but viceversa<br>
-. string.capitalize()  >  capitalize the first letter<br>
-. string.swapcase()    >  revert the case of each char<br>
+. string.upper()          >  changes all string char from lower to upper
+. string.lower()          >  same as lower but viceversa
+. string.capitalize()     >  capitalize the first letter
+. string.swapcase()       >  revert the case of each char
 ```
 #### Convert string to list
 ```
-. string.split()        >  splits a string of multi words into a list of single words, removing whitespace<br>
+. string.split()          >  splits a string of multi words into a list of single words, removing whitespace
 ```
 #### Find char in a string
 ```
-. string.find(target) > find the target in a string<br>
-. string.rfind(target) > find the target but reverse (starting from the last position)<br>
+. string.find(target)     > find the target in a string
+. string.rfind(target)    > find the target but reverse (starting from the last position)
+```
+#### List methods
+```
+. list.appeand(value)     > adds the argument passed to it to the end of the list
+. list.insert(val, pos)   > adds the first argument (a value), in a specific position (second argument)
+. list.count(value)       > counts how many times the argument is in the list
+. list.extend(list)       > concatenates the argument to the original list
+. list.index(i)           > shows the values at the index i
+. list.reverse()          > reverses the list
+. list.sort()             > sorts the list from the lowest to the greatest
+. list.remove(value)      > remove the first item that matches the argument
 ```
 ### FUNCTIONS
-#### List function
 ```
-. enumerate(list)  > associates each element to its index<br>
+. enumerate(sequence)     > associates each element to its index
+. len(sequence)           > gives the lenght of a sequence
+```
+### OPERATIONS
+```
+. in/not in               > boolean values to evaluates an item it's in a sequence
+. a = a + b               > concatenates lists
+. a = a * n               > repeats the list n times
+. a[i:j]                  > slice operator (any expression that evaluates to an integer)
+. a[i]                    > indexing operator
+. a[i:j] = [...]          > modifying elements in a list 
+. a[i:i] = [...]          > squeezing elements into a list
+. a[i:j] = []             > removing elements from a list (watch out, error prone)
+. del a[i/i:j]            > better to use to remove something from a list
 ```
 -----
 <br><br>
@@ -79,7 +102,6 @@ Similar to what other langugages call records (or "struct"), which are informati
 The tuple chunks together information, without specifying the field name but we can guess.
 Btw a tuple it's made of 2 values.
 
------
 ### 3.1 Tuples are like strings
 Like strings, tuples are immutables, support all the indexing operators.
 Empty tuples looks like this:
@@ -115,3 +137,38 @@ As simple as that:
 (a, b) = (b, a)
 ```
 Note that first, tuple needs to be "packed".
+
+-----
+<br><br>
+
+## 4. Data types and categorization:
+### 4.1 Python is heterogeneous
+That means that something (a list, a tuple, or anything else) can be composed of elements of different types.
+### 4.2 Data types
+```
+Syntax                  Name        Type            Category            Mutability        Memory management
+------------------------------------------------------------------------------------------------------------
+a = (2, 4, ...)         Tuple       Tuple           Sequences           Immutable         Non optimized
+b = (2, 4)              Pair        Tuple           Sequences           Immutable         Non optimized
+c = ['a', 9, ...]       List        List            Sequences           Mutable           Non optimized
+d = "Hello World"       String      String          Sequences           Immutable         Optimized
+```
+### 4.3 Alias and clones
+If we assign a variable to another we create an alias which is another name that referes to that specific item:
+```
+>>> money = [(100, 1), (50, 3), (20, 19), (10, 2), (5, 0)]
+>>> happines = money
+>>> money is happines
+True
+```
+It will cause any changes to affect all the alias associated with that specific item.<br><br>
+But what if we want to clone a list, to keep a copy of the original item?
+Well, the easiest way to do that it's by using the slice operator:
+```
+>>> a = [1, 2, 3]
+>>> b = a[:]
+>>> b
+[1, 2, 3]
+```
+It's so importat to remember that functions creates an alias, not a copy or a clone.
+That means if we modify the list in the 
