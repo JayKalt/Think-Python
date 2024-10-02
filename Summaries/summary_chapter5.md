@@ -171,9 +171,9 @@ Well, the easiest way to do that it's by using the slice operator:
 >>> b
 [1, 2, 3]
 ```
-It's so importat to remember that functions creates an alias, not a copy or a clone.
-That means if we modify the list in the _function_, the changes gonna be recorded back in the __main__.
-Those function are knonw as "modifiers" (and not "pure functions"), and the changes are known as "side effects".
+It's so importat to remember that functions creates an alias, not a copy or a clone.<br>
+That means if we modify the list in the _function_, the changes gonna be recorded back in the __main__.<br>
+Those function are knonw as "modifiers" (and not "pure functions"), and the changes are known as "side effects".<br>
 ### 5. Nested lists aka Matrices
 A nested list, or a matrix, looks like this:
 ```
