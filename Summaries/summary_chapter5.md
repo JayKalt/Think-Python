@@ -10,7 +10,8 @@
 ```
 #### Convert string to list
 ```
-. string.split()          >  splits a string of multi words into a list of single words, removing whitespace
+. string.split(separator)          >  splits a string of multi words into a list of single words, removing whitespace or the argument
+. join.splitted-string(glue)       >  does the opposite of 
 ```
 #### Find char in a string
 ```
@@ -141,7 +142,7 @@ Note that first, tuple needs to be "packed".
 -----
 <br><br>
 
-## 4. Data types and categorization:
+## 4. Data types and memory management:
 ### 4.1 Python is heterogeneous
 That means that something (a list, a tuple, or anything else) can be composed of elements of different types.
 ### 4.2 Data types
@@ -170,5 +171,14 @@ Well, the easiest way to do that it's by using the slice operator:
 >>> b
 [1, 2, 3]
 ```
-It's so importat to remember that functions creates an alias, not a copy or a clone.
-That means if we modify the list in the 
+<br><br>
+It's so importat to remember that functions creates an alias, not a copy or a clone.<br>
+That means if we modify the list in the _function_, the changes gonna be recorded back in the __main__.<br>
+Those function are knonw as "modifiers" (and not "pure functions"), and the changes are known as "side effects".
+### 5. Nested lists aka Matrices
+Nested list looks like this:
+```
+list = [[0, 1, 2],[3, 4, 5],[6, 7, 8]]        # Matrix
+list[1][2]                                    # Prints the value in Row 1, Column 2
+>>> 5
+```
