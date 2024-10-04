@@ -29,6 +29,12 @@
 . list.sort()             > sorts the list from the lowest to the greatest
 . list.remove(value)      > remove the first item that matches the argument
 ```
+#### Dictionary methods
+```
+. dictionary.key()        > gives a view of its underlying keys (can be omitted due to common use)
+. dictionary.values()     > gives a view of its underlying values (can be omitted due to common use)
+. dictionary.itmes()      > gives a view of its underlying itmes, a tuple of values
+```
 ### FUNCTIONS
 ```
 . enumerate(sequence)     > associates each element to its index
@@ -36,7 +42,6 @@
 ```
 ### OPERATIONS
 ```
-. in/not in               > boolean values to evaluates an item it's in a sequence
 . a = a + b               > concatenates lists
 . a = a * n               > repeats the list n times
 . a[i:j]                  > slice operator (any expression that evaluates to an integer)
@@ -44,6 +49,10 @@
 . a[i:j] = [...]          > modifying elements in a list 
 . a[i:i] = [...]          > squeezing elements into a list
 . a[i:j] = []             > removing elements from a list (watch out, error prone)
+```
+### STATEMENTS
+```
+. in/not in               > boolean values to evaluates an item it's in a sequence
 . del a[i/i:j]            > better to use to remove something from a list
 ```
 -----
@@ -142,19 +151,11 @@ Note that first, tuple needs to be "packed".
 -----
 <br><br>
 
-## 4. Data types and memory management:
+## 4. Memory management:
 ### 4.1 Python is heterogeneous
-That means that something (a list, a tuple, or anything else) can be composed of elements of different types.
-### 4.2 Data types
-```
-Syntax                  Name        Type            Category            Mutability        Memory management
-------------------------------------------------------------------------------------------------------------
-a = (2, 4, ...)         Tuple       Tuple           Sequences           Immutable         Non optimized
-b = (2, 4)              Pair        Tuple           Sequences           Immutable         Non optimized
-c = ['a', 9, ...]       List        List            Sequences           Mutable           Non optimized
-d = "Hello World"       String      String          Sequences           Immutable         Optimized
-```
-### 4.3 Alias and clones
+That means that something (a list, a tuple, or almost anything else) can be composed of elements of different types.
+
+### 4.2 Alias and clones
 If we assign a variable to another we create an alias which is another name that referes to that specific item:
 ```
 >>> money = [(100, 1), (50, 3), (20, 19), (10, 2), (5, 0)]
@@ -174,6 +175,10 @@ Well, the easiest way to do that it's by using the slice operator:
 It's so importat to remember that functions creates an alias, not a copy or a clone.<br>
 That means if we modify the list in the _function_, the changes gonna be recorded back in the __main__.<br>
 Those function are knonw as "modifiers" (and not "pure functions"), and the changes are known as "side effects".<br>
+
+-----
+<br><br>
+
 ### 5. Nested lists aka Matrices
 A nested list, or a matrix, looks like this:
 ```
@@ -182,3 +187,33 @@ list[1][2]
 >>> 5
 ```
 
+-----
+<br><br>
+
+### 6. DICTIONARIES
+A dictionary is a compound type, a built-in mapping type. We have __keys__ which are immutable types.
+Keys allow us to access to the associated value, which can be any type (heterogeneous).
+
+Empty dictionary:
+```
+english_spanish = {}
+```
+Let's add 2 key-value pairs:
+```
+english_spanish["one"] = "uno"
+english_spanish["two"] = 'dos"
+```
+A dictionary is not just like tuples or lists. Those are sequences and to access we iterate over every item till the ()th element.
+Dictionary are runned by very complex and fast algorithms. This process takes the name of __hashing__.
+Since dictionaries use hashing, the order we write the pairs it won't matter because Python will arrange it in a different way, following the complex algorithms behind it.
+
+## DATA TYPES
+```
+Syntax                  Name        Type            Category            Mutability        Memory management
+------------------------------------------------------------------------------------------------------------
+a = (2, 4, ...)         Tuple       Tuple           Sequences           Immutable         Non optimized
+b = (2, 4)              Pair        Tuple           Sequences           Immutable         Non optimized
+c = ['a', 9, ...]       List        List            Sequences           Mutable           Non optimized
+d = "Hello World"       String      String          Sequences           Immutable         Optimized
+e = {"hello": "hola"}   Dictonary   Mapping type    Not sequences       Mutable
+```
